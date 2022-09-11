@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <!---bootstrap icon css-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <title>product</title>
+    <style>
+      
+   .cart{
+    text-align: right;
+   }
+    
+   .para{
+    text-align: center;
+   }
+   
+   .btn-group{
+    color: primary;
+   }
+
+   .trans:hover{
+    transform: scale(1.1);
+   }
+
+     
+  </style>
+  </head>
+  
+
+  <body>
+    
+  <div class="container-fluid">
+         <div class="row">
+           
+           <!--- navbar start--->
+   
+   
+   
+<div class="col-md-12 mt-3">
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="index.html">Vtrades</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="product.html">product</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">about</a>
+       
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html">Contact</a>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="login.html" data-bs-toggle="modal" data-bs-target="#loginModal">login</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="register.html" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+    <!-- nevbar ends-->
+
+    <!-- login modal start-->
+     <!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter Email</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>-
+         <br>
+         <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter password</span>
+          <input type="text" class="form-control" placeholder="password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Login</button>
+        <button type="button" class="btn btn-primary">Re-enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- login modal end-->
+
+    <!-- register modal starts-->
+
+    <!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>-->
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+       <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter Fullname</span>
+          <input type="text" class="form-control" placeholder="fullname" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>-
+         <br>
+         <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter Email</span>
+          <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <br>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter password</span>
+          <input type="text" class="form-control" placeholder="password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>-
+         <br>
+         <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">enter Re-enter password</span>
+          <input type="text" class="form-control" placeholder="password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+         <br>
+         <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                    <label class="form-check-label" for="form2Example3">
+                      I agree all statements in <a href="#!">Terms of service</a>
+                    </label>
+                  </div>
+      
+
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">register</button>
+        <!--<button type="button" class="btn btn-primary">Re-enter</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!--<div class="para">
+ <p>Men&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Women&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kids&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobiles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beauty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toys & more</p>
+</div>-->
+
+<!-- Example single danger button--> 
+<div class="btn-group">
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Men
+  </p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    women
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Kids
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+   Tv & Appliances
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Sports
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Grocery
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Home & furniturs
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Electronics
+  </p>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <p  class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    toys & more
+  </p>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<div class="col-md-3">
+  <label for="exampleDataList" class="form-label">FILTER:</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="500-1000rs">
+<datalist id="datalistOptions">
+  <option value="1000-1500rs">
+  <option value="1500-2000rs">
+  <option value="2000-2500rs">
+  <option value="2500-3000rs">
+  <option value="3000-above...">
+</datalist> 
+</div>
+
+<div class="col-md-9"> 
+<i class="bi bi-cart3 float-end"></i> 
+     
+   </div>
+
+
+     
+    <!--- products start--->
+
+<b class="mt-2">Men top wears</b>
+
+<div class="col-md-3 mt-4 mb-3">
+  
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp1.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">puma polo neck t-shirt</h5>
+                    <p class="card-text">&#8377;1149.00<br><del>&#8377;1500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+
+    </delivery>
+    </div>
+      
+      
+       <div class="col-md-3 mt-4 mb-3">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp2.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">U.S POLO shirt</h5>
+                    <p class="card-text">&#8377;1899.00<br><del>&#8377;2100.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-3">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp3.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Wrogn men shirt</h5>
+                    <p class="card-text">&#8377;799.00<br><del>&#8377;1000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+ <div class="col-md-3 mt-4 mb-3">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp4.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Nike printed t-shirt</h5>
+                    <p class="card-text">&#8377;999.00<br><del>&#8377;1500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp5.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">puma track pant</h5>
+                    <p class="card-text">&#8377;1399.00<br><del>&#8377;1500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+       <div class="col-md-3 mt-4 mb-4">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp6.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Wrogn jeans pant</h5>
+                    <p class="card-text">&#8377;1399<br><del>&#8377;1500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp7.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Roadster white shorts</h5>
+                    <p class="card-text">&#8377;799<br><del>&#8377;1000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp8.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">levis jeans men</h5>
+                    <p class="card-text">&#8377;2499<br><del>&#8377;3500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<b>Women wears</b>
+<div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp9.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">churidar</h5>
+                    <p class="card-text">&#8377;1499<br><del>&#8377;2000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+       <div class="col-md-3 mt-4 mb-4">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp00.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title"> Black Gown</h5>
+                    <p class="card-text">&#8377;3000<br><del>&#8377;3500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+
+              <img src="asset/photos/pp12.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">kurthas</h5>
+                    <p class="card-text">&#8377;799<br><del>&#8377;1000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp13.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">sarries</h5>
+                    <p class="card-text">&#8377;999<br><del>&#8377;1200.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<b>kids wears</b>
+<div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp14.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">cotton kids ware</h5>
+                    <p class="card-text">&#8377;699<br><del>V1000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+       <div class="col-md-3 mt-4 mb-4">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp15.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Froks for girls</h5>
+                    <p class="card-text">&#8377;399<br><del>&#8377;500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp16.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Animal soft toy</h5>
+                    <p class="card-text">&#8377;499</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp17.webp" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">jonson baby soap</h5>
+                    <p class="card-text">&#8377;150.00<br><del>&#8377;200.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<b>Mobiles and accessaries</b>
+<div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp18.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">iphone 11</h5>
+                    <p class="card-text">&#8377;49999<br><del>&#8377;55499.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+       <div class="col-md-3 mt-4 mb-4">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp19.png" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">tempard glass</h5>
+                    <p class="card-text">&#8377;599<br><del>&#8377;790.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp20.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Mobile back cases</h5>
+                    <p class="card-text">&#8377;399<br><del>&#8377;490.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp21.png" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">One plus 8T mobils</h5>
+                    <p class="card-text">&#8377;44499<br><del>&#8377;50000.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<b>sports</b>
+<div class="col-md-3 mt-4 mb-3">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp22.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">SG test batting pads</h5>
+                    <p class="card-text">&#8377;2499.00<br><del>&#8377;2999.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+  </div>
+
+       <div class="col-md-3 mt-4 mb-3">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp23.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">SS cricket keeping gloves</h5>
+                    <p class="card-text">&#8377;999.00<br><del>&#8377;1299.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-3">
+          <div class="card" style="width: 90%;">
+            <div class="trans">
+              <img src="asset/photos/pp24.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">white sg cricket thigh pad</h5>
+                    <p class="card-text">&#8377;1299.00<br><del>&#8377;1500.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-3">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp25.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">SG abdominal pad</h5>
+                    <p class="card-text">&#8377;149.00<br><del>&#8377;200.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp26.png" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">SG KLR Xtreme cricket bat</h5>
+                    <p class="card-text">&#8377;24499.00<br><del>&#8377;29999.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+      </div>
+    </div>
+    </div>
+
+       <div class="col-md-3 mt-4 mb-4">
+        <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp27.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">SG batting gloves</h5>
+                    <p class="card-text">&#8377;1999.00<br><del>&#8377;2299.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp28.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Shrey master cricket helmet</h5>
+                    <p class="card-text">&#8377;6299.00<br><del>&#8377;7100.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-3 mt-4 mb-4">
+  <div class="trans">
+          <div class="card" style="width: 90%;">
+              <img src="asset/photos/pp29.jpg" class="card-img-top" alt="...">
+ 
+                  <div class="card-body">
+                    <h5 class="card-title">Red SG cricket ball </h5>
+                    <p class="card-text">&#8377;629.00<br><del>&#8377;749.00</del></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+</div>
+</div>
+</div>
+</div>
+
+<b>Vtrades help center | 24x7 customer care support</b>
+
+<p>
+The Vtrades Help Centre page lists out various types of issues that you may have encountered so that there can be quick resolution and you can go back to shopping online. For example, you can get more information regarding order tracking, delivery date changes, help with returns (and refunds), and much more. The Vtrades Help Centre also lists out more information that you may need regarding Vtrades Plus, payment, shopping, and more. The page has various filters listed out on the left-hand side so that you can get your queries solved quickly, efficiently, and without a hassle. You can get the  Vtrades Help Centre number or even access Flipkart Help Centre support if you need professional help regarding various topics. The support executive will ensure speedy assistance so that your shopping experience is positive and enjoyable. You can even inform your loved ones of the support page so that they can properly get their grievances addressed as well. Once you have all your queries addressed, you can pull out your shopping list and shop for all your essentials in one place. You can shop during festive sales to get your hands on some unbelievable deals online.</p>
+
+<!---theory part start--->
+
+<div>
+  <b>Lifestyle</b>
+
+  <p> one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Vtrades will have your back each time.</p>
+
+</div>
+
+<div>
+  <b>Home and furnitures</b>
+
+  <p> Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our Durability Certified Furniture Store has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes.
+
+You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Vtrades.
+
+Baby and Kids</p>
+
+</div>
+
+<div>
+  <b>Books,sports and games</b>
+
+  <p>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.
+
+</p>
+
+</div>
+<!---footer start--->
+       <div class="col-md-12 mt-2 bg-dark text-white text-center">
+            <p>
+              <b>ALL &copy; reserved by Vtrades solutions</b>
+            </p>  
+            <p>
+               contact us<br>
+               Email:vtraders01@gmail.com<br>
+               Pno:9343567345
+            </p>
+            <p>
+               Designed and developed by:<br>
+                Pavan Gowda M
+            </p>   
+            
+            <p>Fallow us on</p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i> 
+            
+            <p>
+              Get it From:
+              <img src="asset/photos/m3.png" style="width:10%;" alt="...">
+              <img src="asset/photos/m4.png" style="width:10%;" alt="...">
+           </p>   
+
+       </div>     
+       <!---footer ends--->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   
+  </body>
+
+</html>
+
+   
+  
+
+   
